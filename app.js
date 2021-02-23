@@ -87,7 +87,7 @@ const createSlider = () => {
     sliderContainer.appendChild(item);
   });
   changeSlide(0);
-  if (duration > 1000) {
+  if (duration >= 1000) {
     timer = setInterval(function () {
       slideIndex++;
       changeSlide(slideIndex);
